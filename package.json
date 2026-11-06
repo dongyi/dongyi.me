@@ -1,0 +1,11 @@
+{
+  "name": "dongyi-me",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "python3 -m http.server 3000 --bind 127.0.0.1",
+    "build": "node scripts/build.mjs",
+    "preview": "python3 -m http.server 3000 --bind 127.0.0.1 --directory dist",
+    "deploy": "npm run build && node scripts/deploy.mjs"
+  }
+}

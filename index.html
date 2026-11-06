@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#faf9f6">
+  <title>Dongyi</title>
+  <meta name="description" content="Dongyi 的个人网站。探索我的产品：Cadence 跑步节拍器、100ls 英语听力练习和 RaceWhere 赛事发现。">
+  <link rel="canonical" href="https://dongyi.me/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Dongyi">
+  <meta property="og:description" content="Cadence · 100ls · RaceWhere。">
+  <meta property="og:url" content="https://dongyi.me/">
+  <link rel="icon" href="/assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="/assets/manrope.ttf" as="font" type="font/ttf" crossorigin>
+  <link rel="stylesheet" href="/style.css">
+  <script src="/script.js" defer></script>
+</head>
+<body>
+  <div class="page">
+    <header class="header">
+      <a class="wordmark" href="/" aria-label="Dongyi 首页">dongyi<span class="name-dot">.</span></a>
+      <div class="languages" role="group" aria-label="选择语言 / Choose language">
+        <button type="button" lang="zh-CN" data-language="zh" aria-pressed="true">中文</button>
+        <span class="language-divider" aria-hidden="true"></span>
+        <button type="button" lang="en" data-language="en" aria-pressed="false">EN</button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="intro" aria-labelledby="intro-title">
+        <div class="intro-copy">
+          <h1 id="intro-title" data-i18n="greeting">你好，我是 Dongyi。</h1>
+          <p class="intro-description" data-i18n="intro">写代码，也跑步。<br>这里是我做的几个小产品。</p>
+        </div>
+        <figure class="portrait">
+          <img src="/assets/runner.webp" width="1086" height="1448" alt="复古胶片风格的马拉松跑者" fetchpriority="high" data-i18n-alt="portraitAlt">
+        </figure>
+      </section>
+
+      <section id="products" class="products" aria-labelledby="products-title">
+        <div class="section-heading">
+          <h2 id="products-title" data-i18n="products">一些产品</h2>
+        </div>
+
+        <a class="product" href="https://therunnerapp.com/" target="_blank" rel="noopener noreferrer" aria-describedby="cadence-description">
+          <span class="product-mark cadence-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M5 18h5l4-9 5 15 4-10h4" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <span class="product-content"><span class="product-title">Cadence<span class="product-category" data-i18n="cadenceCategory">跑步</span></span><span class="product-description" id="cadence-description" data-i18n="cadenceDescription">一个帮助稳定步频的跑步节拍器。</span><span class="product-domain">therunnerapp.com</span></span>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="sr-only" data-i18n="newTab">（在新标签页打开）</span>
+        </a>
+
+        <a class="product" href="https://socratop.com/" target="_blank" rel="noopener noreferrer" aria-describedby="100ls-description">
+          <span class="product-mark listening-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M7 14v4m6-9v14m6-12v10m6-7v4" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"/></svg></span>
+          <span class="product-content"><span class="product-title">100ls<span class="product-category" data-i18n="lsCategory">学习</span></span><span class="product-description" id="100ls-description" data-i18n="lsDescription">用播客逐句精听、跟读，练习英语。</span><span class="product-domain">socratop.com</span></span>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="sr-only" data-i18n="newTab">（在新标签页打开）</span>
+        </a>
+
+        <a class="product" href="https://racewhere.com/" target="_blank" rel="noopener noreferrer" aria-describedby="racewhere-description">
+          <span class="product-mark race-mark" aria-hidden="true"><svg viewBox="0 0 32 32" fill="none"><path d="M23 14c0 5-7 11-7 11S9 19 9 14a7 7 0 1 1 14 0Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><circle cx="16" cy="14" r="2.5" stroke="currentColor" stroke-width="2"/></svg></span>
+          <span class="product-content"><span class="product-title">RaceWhere<span class="product-category" data-i18n="raceCategory">探索</span></span><span class="product-description" id="racewhere-description" data-i18n="raceDescription">发现跑步赛事，找找下一场跑哪里。</span><span class="product-domain">racewhere.com</span></span>
+          <svg class="arrow" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M6 18 18 6M6 6h12v12" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <span class="sr-only" data-i18n="newTab">（在新标签页打开）</span>
+        </a>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <span>© <span id="year">2026</span> Dongyi</span>
+      <a href="mailto:juvenpp@gmail.com"><span data-i18n="contact">联系我</span> · juvenpp@gmail.com</a>
+    </footer>
+  </div>
+</body>
+</html>
